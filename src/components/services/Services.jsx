@@ -4,23 +4,27 @@ const Services = () => {
   const services = [
     {
       title: 'AI-Powered Career Guidance',
-      description: 'Access extensive information on career options, skillsoptions, fkillsr options',
-      image: '/images/services1.png'
+      description: 'Access extensive information on career options, skills options, and more.',
+      image: '/images/services1.png',
+      bgColor: '#e6f0ff'
     },
     {
       title: 'Interactive Career Exploration Tools',
-      description: 'Access extensive information on career options, skillsoptions, fkillsr options',
-      image: '/images/services2.png'
+      description: 'Discover tools to explore various career paths interactively.',
+      image: '/images/services2.png',
+      bgColor: '#ffe6f9'
     },
     {
       title: 'Career Mentorship Programs',
-      description: 'Access extensive information on career ohgvjptions, skillsoptions, fkillsr optionshgjfh',
-      image: '/images/services3.png'
+      description: 'Connect with mentors to guide you on your career journey.',
+      image: '/images/services3.png',
+      bgColor: '#fff5e6'
     },
     {
       title: 'Career Resource Portals',
-      description: 'Access extensive information on career options, skillsoptions, fkillsr options',
-      image: '/images/services4.png'
+      description: 'Find extensive resources and materials for career development.',
+      image: '/images/services4.png',
+      bgColor: '#ffe6e6'
     }
   ];
 
@@ -32,13 +36,15 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-6">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center" style={{backgroundColor: ['#e6f0ff', '#ffe6f9', '#fff5e6', '#ffe6e6'][index]}}>
-                  <img src={service.image} alt={service.title} className="w-12 h-12 object-contain" />
-                </div>
-                <h3 className="text-xl font-semibold text-center mb-2">{service.title}</h3>
-                <p className="text-gray-600 text-center text-sm">{service.description}</p>
+            <div
+              key={index}
+              className="rounded-lg shadow-lg overflow-hidden"
+              style={{ backgroundColor: service.bgColor }}
+            >
+              <div className="p-6 text-center">
+                <img src={service.image} alt={service.title} className="w-24 h-24 mx-auto mb-4 object-contain" />
+                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                <p className="text-gray-700 text-sm">{service.description}</p>
               </div>
             </div>
           ))}

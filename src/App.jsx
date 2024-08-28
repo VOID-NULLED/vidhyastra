@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar"
 import Layout from './pages/Layout';
 import Home from "./pages/Home"
 import AboutUs from "./pages/AboutUs"
+import Login from './authentication/Login';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
           <Route path="about" element={<AboutUs />} />
         </Route>
       </Routes>

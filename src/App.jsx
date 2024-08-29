@@ -5,7 +5,9 @@ import Navbar from "./components/navbar/Navbar"
 import Layout from './pages/Layout';
 import Home from "./pages/Home"
 import AboutUs from "./pages/AboutUs"
-import Login from './authentication/Login';
+import Demo  from './components/Demo';
+import { Login } from './authentication/Login';
+import { Register } from './authentication/Register';
 
 const App = () => {
   return (
@@ -14,7 +16,9 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path="demo" element={<Demo />} />
         </Route>
       </Routes>
     </BrowserRouter>

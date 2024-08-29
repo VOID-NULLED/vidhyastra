@@ -7,21 +7,18 @@ import CarrerOptions from '../components/carrerOptions/CarrerOptions'
 import Banner from '../components/banner/Banner'
 import Review from '../components/review/Review'
 import Blogs from '../components/blogs/Blogs'
-import Footer from '../components/footer/Footer'
 
 const Home = () => {
   return (
     <div>
       <Hero/>
       <Services/>
-      <CareerCounselling/>
       <VidyastraWorks/>
       <CareerCounselling/>
       <CarrerOptions/>  
       <Banner/>
       <Review/>
       <Blogs/> 
-      <Footer/>
       </div>
   )
 }

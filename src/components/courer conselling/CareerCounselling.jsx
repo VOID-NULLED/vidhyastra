@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { FaAngleLeft ,FaAngleRight } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const programs = [
   {
@@ -32,6 +34,11 @@ const ProgramCard = ({ title, image, color }) => (
 );
 
 const CareerCounselling = () => {
+
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -50,12 +57,15 @@ const CareerCounselling = () => {
       <h2 className="text-center text-2xl font-semibold mb-8">Programs for</h2>
 
       {/* Desktop view */}
+      <div data-aos="fade-up" data-aos-duration="3000"
+     data-aos-anchor-placement="top-bottom">
       <div className="hidden md:flex justify-center space-x-8">
         {programs.map((program, index) => (
           <div key={index} className="w-1/3">
             <ProgramCard {...program} />
           </div>
         ))}
+      </div>
       </div>
 
       {/* Mobile slider view */}

@@ -17,11 +17,15 @@ const Banner = () => {
             </button>
           </div>
           <div className="flex justify-center md:w-1/2">
+          <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <img 
               src="/images/banner.png"
               alt="Career Clarity" 
               className="w-full h-auto max-w-[200px] md:max-w-[300px] rounded-lg" 
-            />
+              />
+              </div>
           </div>
         </div>
       </div>

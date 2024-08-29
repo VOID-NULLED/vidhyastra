@@ -1,6 +1,12 @@
-import React from 'react';
+import React , { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const VidyastraWorks = () => {
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   const sections = [
     {
       imgSrc: '/images/vidhya1.png',
@@ -45,7 +51,6 @@ const VidyastraWorks = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           How Does <span className="text-purple-600">Vidyastra Work</span>
         </h2>
-
         <div className="space-y-8 md:space-y-12">
           {sections.map((section, index) => (
             <div
@@ -53,6 +58,9 @@ const VidyastraWorks = () => {
               className={`flex flex-col ${
                 section.reverse ? 'md:flex-row-reverse' : 'md:flex-row'
               } items-center gap-6`}
+              data-aos={section.reverse ? 'fade-left' : 'fade-right'}
+              data-aos-delay={index * 200} // Increase the delay for each section
+              data-aos-duration="800" // Duration of the animation
             >
               <div className="p-4 w-60 h-60 flex-shrink-0">
                 <img

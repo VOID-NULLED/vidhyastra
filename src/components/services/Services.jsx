@@ -1,6 +1,11 @@
-import React from 'react';
+import React ,{ useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  },[])
   const services = [
     {
       title: 'AI-Powered Career Guidance',
@@ -34,6 +39,7 @@ const Services = () => {
         <h2 className="text-5xl font-bold text-center mb-12">
           Our <span className="text-purple-600">Services</span>
         </h2>
+        <div data-aos="fade-right" data-aos-duration="1000">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
@@ -48,6 +54,7 @@ const Services = () => {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>

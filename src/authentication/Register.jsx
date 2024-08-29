@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 
-export const Login = () => {
+export const Register = () => {
   return (
     <div className="bg-[#c464ff] flex justify-center w-full min-h-screen p-5">
       <div className="bg-[#c464ff] max-w-[1512px] w-full h-full flex justify-center items-center">
@@ -27,7 +27,8 @@ export const Login = () => {
               {/* Right side (Form) */}
               <div className="flex flex-col w-full md:w-1/2 items-center gap-8 p-8">
                 <div className="text-center">
-                  <h1 className="text-4xl font-bold text-black py-6">Login</h1>
+                  <h1 className="text-4xl font-semibold text-black">Sign-up</h1>
+                  <p className="text-xl text-[#858585] mt-2">Enter your credentials to create a new account</p>
                 </div>
 
                 <div className="flex flex-col w-full items-start gap-6">
@@ -53,9 +54,8 @@ export const Login = () => {
                 </div>
 
                 <button className="w-full bg-[#c464ff] text-white text-xl font-semibold py-3 rounded-[15px]">
-                  Login
+                  Sign-up
                 </button>
-                <p className="text-md font-semibold">If not have account <Link to="/register" className="text-purple-600">sign-up</Link></p>
 
                 {/* Social Media Icons */}
                 <div className="flex items-center justify-center gap-8 mt-8">

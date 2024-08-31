@@ -1,7 +1,8 @@
-import React from "react";
+import React  from "react";
 import { FaUser, FaLock, FaFacebook, FaTwitter, FaGoogle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
+
 
 
 export const Login = () => {
@@ -19,7 +20,7 @@ export const Login = () => {
       className="absolute w-[580px] h-auto top-[-200px] left-0"
       alt="Girl with books and backpack"
       src="/images/girl.png"
-    />
+    />   
   </div>
 </div>
 

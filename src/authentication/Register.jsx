@@ -9,19 +9,19 @@ export const Register = () => {
     <div className="bg-[#c464ff] flex justify-center w-full min-h-screen p-5">
       <div className="bg-[#c464ff] max-w-[1512px] w-full h-full flex justify-center items-center">
         <div className="relative w-full max-w-[1262px] h-full md:h-[982px] bg-[url(/rectangle-60.svg)] bg-no-repeat bg-cover flex justify-center items-center">
-          <div className="relative w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-auto md:h-[703px] bg-white rounded-[30px] overflow-hidden">
+          <div className="relative w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-auto md:h-[803px] bg-white rounded-[30px] overflow-hidden">
             <div className="flex flex-col md:flex-row w-full h-full">
               {/* Left side (Image on Desktop view) */}
               <div className="hidden md:flex flex-col justify-center items-center md:w-1/2 p-8">
-  <div className="relative w-full h-auto">
-    <img className="absolute w-[508px] h-auto top-[-200px] left-0" alt="Ellipse" src="/images/elite.png" />
-    <img
-      className="absolute w-[580px] h-auto top-[-200px] left-0"
-      alt="Girl with books and backpack"
-      src="/images/girl.png"
-    />
-  </div>
-</div>
+        <div className="relative w-full h-auto">
+        <img className="absolute w-[508px] h-auto top-[-200px] left-0" alt="Ellipse" src="/images/elite.png" />
+        <img
+          className="absolute w-[580px] h-auto top-[-200px] left-0"
+          alt="Girl with books and backpack"
+          src="/images/girl.png"
+            />
+          </div>
+          </div>
 
 
               {/* Right side (Form) */}

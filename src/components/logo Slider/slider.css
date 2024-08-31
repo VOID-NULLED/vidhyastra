@@ -1,12 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.active {
-    color: #1d4ed8; /* Tailwind's blue-700 */
-  }
-
-  @layer utilities {
+@layer utilities {
     @keyframes scroll {
       0% {
         transform: translateX(0);
@@ -16,5 +8,4 @@
       }
     }
   }
-  
   

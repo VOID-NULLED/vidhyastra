@@ -8,6 +8,7 @@ import Demo  from './components/Demo';
 import { Login } from './authentication/Login';
 import { Register } from './authentication/Register';
 import Services from './pages/Services'
+import MentorPage from './pages/MentorPage';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="register" element={<Register />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="services" element={<Services />} />
+          <Route path="mentor" element={<MentorPage />} />
           <Route path="demo" element={<Demo />} />
         </Route>
       </Routes>

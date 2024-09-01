@@ -2,10 +2,10 @@ import React from 'react';
 
 const Hero2 = () => {
   return (
-    <div className="max-w-7xl mx-auto p-10 font-sans">
+    <div className="max-w-7xl mx-auto p-16 font-sans">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-          <h2 className="text-sm text-gray-600">Vidyastra Helps to</h2>
+          <h2 className="text-sm text-gray-600 pb-2 font-semibold">Vidyastra Helps to</h2>
           <h1 className="text-3xl md:text-4xl font-bold mb-2">
             Leveraging Technology
             <br />

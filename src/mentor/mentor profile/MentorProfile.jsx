@@ -1,4 +1,8 @@
 import React from 'react';
+import { IoLocation } from "react-icons/io5";
+import { IoMdStar } from "react-icons/io";
+import { GoClockFill } from "react-icons/go";
+import AboutSection from './AboutSection';
 
 const MentorProfile = () => {
   return (
@@ -27,38 +31,43 @@ const MentorProfile = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-6">
-          {/* Location */}
-          <div className="flex items-center text-sm text-gray-600">
-            {/* Icon can be added back here */}
-            <span>Canada</span>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-6 px-4 w-full md:w-[60vw]">
+          <div className="flex flex-col w-full md:w-auto">
+            <div className="flex items-center mb-2">
+              <IoLocation />
+              <span className="ml-2 font-medium text-gray-800">Canada</span>
+            </div>
+            <div className="flex items-center mb-2">
+              <IoMdStar />
+              <span className="ml-2 font-medium text-gray-800">4.5 (49 users)</span>
+            </div>
+            <div className="flex items-center">
+              <GoClockFill />
+              <span className="ml-2 font-medium text-gray-800">Active Today</span>
+            </div>
           </div>
-
-          {/* Rating */}
-          <div className="mt-2 flex items-center text-sm text-gray-600">
-            {/* Icon can be added back here */}
-            <span>4.5 (49 users)</span>
-          </div>
-
-          {/* Activity Status */}
-          <div className="mt-2 flex items-center text-sm text-purple-600">
-            <span className="w-2 h-2 bg-purple-600 rounded-full mr-2"></span>
-            <span>Active Today</span>
-          </div>
-
-          {/* Skills Section */}
-          <div className="mt-6">
-            <h3 className="text-lg font-semibold mb-2">Skills</h3>
-            <div className="flex flex-wrap gap-2">
-              {['Machine Learning', 'UI/UX Design', 'Prototyping', 'User Research'].map((skill, index) => (
-                <span key={index} className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
-                  {skill}
-                </span>
-              ))}
-              <span className="text-purple-600 text-sm font-medium">+8 more</span>
+          <div className="mt-4 md:mt-0 w-full md:w-auto">
+            <h2 className="font-bold text-lg text-purple-500">Skills</h2>
+            <div className="flex flex-wrap gap-2 mt-2">
+              <button className="bg-gray-200 px-3 py-1 rounded-md font-medium text-gray-700 hover:bg-gray-300">
+                Machine Learning
+              </button>
+              <button className="bg-gray-200 px-3 py-1 rounded-md font-medium text-gray-700 hover:bg-gray-300">
+                Product Design
+              </button>
+              <button className="bg-gray-200 px-3 py-1 rounded-md font-medium text-gray-700 hover:bg-gray-300">
+                UX Research
+              </button>
+              <button className="bg-gray-200 px-3 py-1 rounded-md font-medium text-gray-700 hover:bg-gray-300">
+                Data Science
+              </button>
+            </div>
+            <div className="mt-2 text-gray-500 text-sm">
+              <a href="#">+8 more</a>
             </div>
           </div>
         </div>
+      <AboutSection/>
       </div>
     </div>
   );

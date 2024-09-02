@@ -5,6 +5,13 @@
 .active {
     color: #1d4ed8; /* Tailwind's blue-700 */
   }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
 
   @layer utilities {
     @keyframes scroll {
@@ -16,5 +23,4 @@
       }
     }
   }
-  
   

@@ -2,6 +2,7 @@ import React from 'react';
 
 const Banner2 = () => {
   return (
+    <div>
     <div className="flex justify-center items-center min-h-screen bg-purple-100 p-4">
       <div className="bg-[#C465FF] rounded-3xl shadow-lg overflow-hidden max-w-4xl w-full">
         <div className="flex flex-col md:flex-row p-8 items-center">
@@ -39,6 +40,7 @@ const Banner2 = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

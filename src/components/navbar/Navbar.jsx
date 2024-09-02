@@ -47,13 +47,13 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          About
+        <NavLink to="/mentorShip" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
+          MentorShip
         </NavLink>
       </li>
       <li>
-        <NavLink to="/services" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          Services
+        <NavLink to="/about" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
+          About
         </NavLink>
       </li>
       <li>

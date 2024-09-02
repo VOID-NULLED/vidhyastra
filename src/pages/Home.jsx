@@ -7,12 +7,14 @@ import CarrerOptions from '../components/carrerOptions/CarrerOptions'
 import Banner from '../components/banner/Banner'
 import Review from '../components/review/Review'
 import Blogs from '../components/blogs/Blogs'
+import CarrerClarityBanner from '../components/carrer clarity/CarrerClarityBanner'
 
 const Home = () => {
   return (
     <div>
       <Hero/>
       <Services/>
+      <CarrerClarityBanner/>
       <VidyastraWorks/>
       <CareerCounselling/>
       <CarrerOptions/>  

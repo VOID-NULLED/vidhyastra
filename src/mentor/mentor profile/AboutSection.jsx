@@ -3,7 +3,7 @@ import React from "react";
 const AboutSection = () => {
   return (
     <div className="px-4 md:px-16">
-      <div className="text-purple-600 text-lg md:text-xl font-bold pt-16">
+      <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
         About
       </div>
       <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
@@ -24,7 +24,7 @@ const AboutSection = () => {
         feel free to send me a message and we can take it from there. Talk to
         you soon!~Jen
       </div>
-      <div className="text-purple-600 text-lg md:text-xl font-bold pt-16">
+      <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
         Achievements and Awards Section:
       </div>
       <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold gap-2">
@@ -40,7 +40,7 @@ const AboutSection = () => {
           </li>
         </ul>
       </div>
-      <div className="text-purple-600 text-lg md:text-xl font-bold pt-16">
+      <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
         Personal Statement
       </div>
       <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
@@ -50,7 +50,7 @@ const AboutSection = () => {
         successful and fulfilling career. Let’s work together to turn your
         career aspirations into reality."
       </div>
-      <div className="text-purple-600 text-lg md:text-xl font-bold pt-16">
+      <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
       User Testimonials
       </div>
     </div>

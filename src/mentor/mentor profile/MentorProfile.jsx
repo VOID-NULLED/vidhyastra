@@ -32,7 +32,7 @@ const MentorProfile = () => {
 
         {/* Additional Info */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-6 px-4 w-full md:w-[60vw]">
-          <div className="flex flex-col w-full md:w-auto">
+          <div className="flex flex-col w-full md:w-auto pl-10">
             <div className="flex items-center mb-2">
               <IoLocation />
               <span className="ml-2 font-medium text-gray-800">Canada</span>

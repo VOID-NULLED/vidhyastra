@@ -52,7 +52,7 @@ const UserReview = () => {
         </h2>
       <div className="hidden md:grid md:grid-cols-3 gap-6 p-16  ">
         {reviews.map((review) => (
-          <div key={review.id} className="container flex bg-[#FAF2FF] rounded-2xl shadow-md p-8">
+          <div key={review.id} className="container flex bg-[#FFF2F2] rounded-2xl shadow-md p-8">
             <img
               src={review.image}
               alt={review.name}

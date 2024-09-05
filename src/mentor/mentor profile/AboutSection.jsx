@@ -6,7 +6,7 @@ const AboutSection = () => {
       <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
         About
       </div>
-      <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
+      <div className="text-lg break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
         Hi there, Are you looking for additional support to navigate your data
         science career? Do you feel you can't speak to your manager freely? Are
         you feeling a bit confused on how to take your career to the next level?
@@ -27,7 +27,7 @@ const AboutSection = () => {
       <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
         Achievements and Awards Section:
       </div>
-      <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold gap-2">
+      <div className="text-lg break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold gap-2">
         <ul className="list-disc space-y-3">
           <li>"Top 50 Product Managers in India" by ProductCon (2023)</li>
           <li>
@@ -43,15 +43,39 @@ const AboutSection = () => {
       <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
         Personal Statement
       </div>
-      <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
+      <div className="text-lg break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
         "I believe that with the right guidance, anyone can unlock their full
         potential in the tech industry. My goal as a mentor is to empower you
         with the insights, tools, and confidence you need to carve out a
         successful and fulfilling career. Let’s work together to turn your
         career aspirations into reality."
       </div>
-      <div className="text-[#C465FF] text-lg md:text-2xl font-bold pt-16">
+      <div className="text-[#C465FF] text-2xl md:text-2xl font-bold pt-16">
       User Testimonials
+      </div>
+      <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
+        <div className="flex flex-col-2">
+      <img src="/images/review.png" className="w-[76px] h-[65px] object-cover"/>
+      <div className="pl-5 pt-2">
+        <h1 className="text-black text-3xl font-bold">Sneha Patel</h1>
+        <p className="text-gray-400 text-lg font-semibold">DPS RK Puram</p>
+      </div>
+      </div>
+      <div className="mr-8 pt-5 text-lg">
+      Jennifer is an outstanding mentor with exceptional communication skills. She has been instrumental in my growth, providing invaluable and aiding in the development of a career plan
+      </div>
+      </div>
+      <div className="text-sm break-words w-full md:w-[45vw] p-2 md:p-4 font-semibold">
+        <div className="flex flex-col-2">
+      <img src="/images/review.png" className="w-[76px] h-[65px] object-cover"/>
+      <div className="pl-5 pt-2">
+        <h1 className="text-black text-3xl font-bold">Sneha Patel</h1>
+        <p className="text-gray-400 text-lg font-semibold">DPS RK Puram</p>
+      </div>
+      </div>
+      <div className="mr-8 pt-5 text-lg">
+      Jennifer is an outstanding mentor with exceptional communication skills. She has been instrumental in my growth, providing invaluable and aiding in the development of a career plan
+      </div>
       </div>
     </div>
   );

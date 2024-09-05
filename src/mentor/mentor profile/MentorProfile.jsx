@@ -3,6 +3,7 @@ import { IoLocation } from "react-icons/io5";
 import { IoMdStar } from "react-icons/io";
 import { GoClockFill } from "react-icons/go";
 import AboutSection from './AboutSection';
+import Blogs from '../../components/blogs/Blogs';
 
 const MentorProfile = () => {
   return (
@@ -68,6 +69,7 @@ const MentorProfile = () => {
           </div>
         </div>
       <AboutSection/>
+      <Blogs/>
       </div>
     </div>
   );

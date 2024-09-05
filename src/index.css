@@ -24,3 +24,8 @@
     }
   }
   
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite; /* Adjust speed and duration as needed */
+    display: flex;
+  }

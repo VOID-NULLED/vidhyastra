@@ -6,10 +6,16 @@ import { Link } from "react-router-dom";
 
 export const Register = () => {
   return (
-    <div className="bg-[#c464ff] flex justify-center w-full min-h-screen p-5">
-      <div className="bg-[#c464ff] max-w-[1512px] w-full h-full flex justify-center items-center">
-        <div className="relative w-full max-w-[1262px] h-full md:h-[982px] bg-[url(/rectangle-60.svg)] bg-no-repeat bg-cover flex justify-center items-center">
-          <div className="relative w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-auto md:h-[803px] bg-white rounded-[30px] overflow-hidden">
+    <div className="relative flex justify-center w-full min-h-screen p-5 bg-[#C465FF]">
+    {/* Background Image */}
+    <div className="absolute inset-0">
+      <img
+        src="/images/loginrectangle.png"
+        alt="Background Image"
+        className="w-full h-full object-cover"
+      />
+    </div><div className="relative w-full max-w-[1262px] h-full md:h-[982px] bg-[url(/rectangle-60.svg)] bg-no-repeat bg-cover flex justify-center items-center">
+          <div className="relative w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] h-auto md:h-[603px] bg-white rounded-[30px] overflow-hidden">
             <div className="flex flex-col md:flex-row w-full h-full">
               {/* Left side (Image on Desktop view) */}
               <div className="hidden md:flex flex-col justify-center items-center md:w-1/2 p-8">
@@ -56,6 +62,12 @@ export const Register = () => {
                 <button className="w-full bg-[#c464ff] text-white text-xl font-semibold py-3 rounded-[15px]">
                   Sign-up
                 </button>
+                <p className="text-md font-semibold">
+                  If you have account{" "}
+                  <Link to="/login" className="text-purple-600">
+                    Login 
+                  </Link>
+                </p>
 
                 {/* Social Media Icons */}
                 <div className="flex items-center justify-center gap-8 mt-8">
@@ -72,7 +84,6 @@ export const Register = () => {
             </Link>
           </div>
         </div>
-      </div>
     </div>
   );
 };

@@ -11,6 +11,13 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    body, html {
+      overflow-x: hidden;
+    }
   }
 
   @layer utilities {
@@ -29,3 +36,5 @@
     animation: scroll 40s linear infinite; /* Adjust speed and duration as needed */
     display: flex;
   }
+
+  

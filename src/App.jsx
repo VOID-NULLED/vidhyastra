@@ -9,6 +9,7 @@ import { Login } from './authentication/Login';
 import { Register } from './authentication/Register';
 import Services from './pages/Services'
 import MentorPage from './pages/MentorPage';
+import Exploration from './pages/Exploration';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="register" element={<Register />} />
           <Route path="about" element={<MentorPage />} />
           <Route path="mentorShip" element={<Services />} />
+          <Route path="exploration" element={<Exploration />} />
           <Route path="mentor" element={<AboutUs />} />
           <Route path="demo" element={<Demo />} />
         </Route>

@@ -57,8 +57,8 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          Contact
+        <NavLink to="/exploration" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
+        Exploration
         </NavLink>
       </li>
     </ul>

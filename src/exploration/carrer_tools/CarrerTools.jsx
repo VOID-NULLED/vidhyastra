@@ -39,7 +39,7 @@ const CarrerTools = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-white to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-purple-600 text-center mb-12">
         Career Exploration <span className="text-black"> Tools</span>

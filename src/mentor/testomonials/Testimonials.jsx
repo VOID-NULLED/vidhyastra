@@ -42,11 +42,11 @@ const Testimonials = () => {
                         <h1 className="text-6xl md:text-7xl font-bold mb-5 text-gray-600">What people <br />are saying.</h1>
                         <h3 className="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                         <div className="text-center mb-10">
-                            <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
-                            <span className="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
-                            <span className="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
-                            <span className="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
-                            <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                            <span className="inline-block w-1 h-1 rounded-full bg-purple-500 ml-1"></span>
+                            <span className="inline-block w-3 h-1 rounded-full bg-purple-500 ml-1"></span>
+                            <span className="inline-block w-40 h-1 rounded-full bg-purple-500"></span>
+                            <span className="inline-block w-3 h-1 rounded-full bg-purple-500 ml-1"></span>
+                            <span className="inline-block w-1 h-1 rounded-full bg-purple-500 ml-1"></span>
                         </div>
                     </div>
                     <div className="-mx-3 md:flex items-start">

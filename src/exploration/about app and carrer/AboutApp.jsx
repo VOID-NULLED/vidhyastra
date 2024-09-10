@@ -73,7 +73,7 @@ const AboutApp = () => {
                 <img
                   src={section.imgSrc}
                   alt={section.altText}
-                  className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-fit"
+                  className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-fit pl-5"
                 />
               </div>
               <div className="w-full md:w-1/2 lg:w-2/3 flex flex-col text-center md:text-left lg:pl-32 lg:pr-32 ">

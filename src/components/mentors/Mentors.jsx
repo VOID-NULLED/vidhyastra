@@ -3,7 +3,7 @@ import ProfileCards from "../profile of mentors/ProfileCards";
 
 const Mentors = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-[#f9f0ff]">
       <div className="text-center">
         <div className="text-3xl font-bold mr-5 p-8">
           Learn from the <span className="text-purple-600">Mentors</span>

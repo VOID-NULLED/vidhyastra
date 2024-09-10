@@ -48,7 +48,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/mentorShip" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          MentorShip
+          Services
         </NavLink>
       </li>
       <li>

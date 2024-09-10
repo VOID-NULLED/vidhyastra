@@ -18,11 +18,11 @@ const Hero = () => {
       }}
     >
       <div className="mx-auto px-4 py-12 flex flex-col lg:flex-row items-center">
-        <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12 text-center lg:text-left">
+        <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12 text-center lg:text-left lg:pl-12">
           <h2 className="text-2xl font-bold mb-2">Vidyastra Helps to</h2>
-          <h1 className="text-4xl font-bold mb-4">
-            Leveraging Technology for{' '}
-            <span className="text-purple-500">Career Guidance</span>
+          <h1 className="text-5xl font-bold mb-4">
+            Leveraging Technology <br/>
+            <span className="text-purple-500"><span>for {" "}</span>Career Guidance</span>
           </h1>
           <p className="mb-6 text-gray-600">
             Access extensive information on career options, skills, education, and job trends. 

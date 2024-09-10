@@ -134,7 +134,7 @@ const ProfileCards = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center  bg-gray-100">
+    <div className="flex items-center justify-center  bg-[#f9f0ff]">
       <div className="flex space-x-4 overflow-hidden">
         <div className="flex space-x-4 animate-scroll">
           

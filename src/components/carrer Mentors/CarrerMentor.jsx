@@ -11,20 +11,20 @@ const CareerMentor = () => {
   ];
 
   const CareerCategoryCard = ({ name, color, icon }) => (
-    <div className={`${color} rounded-xl  sm:p-8 flex flex-col items-center justify-center text-center h-72 w-auto sm:w-56 transition-transform hover:scale-105`}>
-      <img src={icon} alt={name} className="mb-4 w-36 h-36 sm:w-48 sm:h-48 object-cover" /> 
+    <div className={`${color} rounded-xl sm:p-8 flex flex-col items-center justify-center text-center h-72 w-full sm:w-56 transition-transform hover:scale-105`}>
+      <img src={icon} alt={name} className="mb-4 w-24 h-24 sm:w-36 sm:h-36 object-cover" />
       <h3 className="font-semibold text-lg sm:text-xl mb-1">{name}</h3>
       <a href="#" className="text-sm text-gray-600 hover:underline">View Mentors &gt;</a>
     </div>
   );
 
   return (
-    <div className='sm:p-16'>
-      <div className='text-3xl sm:text-4xl font-bold text-center'>
-        Explore <span className='text-purple-600'>Career Mentors</span> of Various Fields
+    <div className="min-h-screen flex flex-col items-center justify-center sm:p-16">
+      <div className="text-3xl sm:text-4xl font-bold text-center mb-10">
+        Explore <span className="text-purple-600">Career Mentors</span> of Various Fields
       </div>
-      <div className="max-w-6xl mx-auto  sm:pt-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-14"> 
+      <div className="w-full flex justify-around space-x-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <CareerCategoryCard key={index} {...category} />
           ))}

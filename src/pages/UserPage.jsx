@@ -9,7 +9,7 @@ const UserPage = () => {
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const response = await axios.get('/profile/', {
+                const response = await axios.get('api/profile/', {
                     headers: {
                         Authorization: `Bearer ${accessToken}`,
                     },
@@ -60,10 +60,6 @@ const UserPage = () => {
                         <div className="sm:col-span-1">
                             <dt className="text-sm font-medium text-gray-500">Phone Number</dt>
                             <dd className="mt-1 text-sm text-gray-900">{userData.phone_number}</dd>
-                        </div>
-                        <div className="sm:col-span-1">
-                            <dt className="text-sm font-medium text-gray-500">Standard</dt>
-                            <dd className="mt-1 text-sm text-gray-900">{userData.std}</dd>
                         </div>
                     </dl>
                 </div>

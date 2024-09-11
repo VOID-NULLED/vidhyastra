@@ -7,7 +7,6 @@ import {
   FaTwitter,
   FaGoogle,
   FaEnvelope,
-  FaGraduationCap
 } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 
@@ -42,11 +41,11 @@ export const Register = () => {
       return;
     }
     try {
-      const response = await axios.post("/api/signup", formData);
+      const response = await axios.post("/api/signup/", formData);
       setSuccess("SignUp Successful");
       setError("");
       console.log(response.data);
-      localStorage.setItem('access', data.tokens.access);
+      localStorage.setItem('access', response.data.tokens);
       navigate("/");
     } catch (error) {
       setError("SignUp Failed. Please try again");

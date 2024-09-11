@@ -38,12 +38,12 @@ export const Login = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("/api/login", {
+      const response = await axios.post("/api/login/", {
         email: formData.email,
         password: formData.password,
       });
       console.log("Login successful:", response.data);
-      localStorage.setItem("accessToken", response.data.token);
+      localStorage.setItem("access", response.data.token);
       navigate("/");
     } catch (error) {
       setError("Login failed. Please check your credentials.");

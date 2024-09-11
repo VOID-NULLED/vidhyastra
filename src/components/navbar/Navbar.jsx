@@ -4,27 +4,42 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+  };
+
+  const services = [
+    { name: 'Mentorship Program', path: '/mentorShip' },
+    { name: 'Career Counseling', path: '/career-counseling' },
+    { name: 'Workshops', path: '/workshops' },
+    { name: 'Online Courses', path: '/online-courses' },
+  ];
+
   return (
-    <nav className="bg-white w-full z-20 top-0 left-0 border-b border-gray-200">
-      <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-white w-full z-20 top-0 left-0 shadow-md">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink to="/" className="flex items-center space-x-3">
-          {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
-          <span className="self-center text-4xl text-black font-bold whitespace-nowrap">Vidyastra</span>
+          <span className="self-center text-4xl text-black font-bold">Vidyastra</span>
         </NavLink>
         <div className="flex md:order-2">
           <NavLink to="/login">
-          <button
-            type="button"
-            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0"
+            <button
+              type="button"
+              className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0"
             >
-            Login
-          </button>
-            </NavLink>
+              Login
+            </button>
+          </NavLink>
           <button
             onClick={toggleMenu}
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -35,36 +50,57 @@ const Navbar = () => {
             <span className="sr-only">Open main menu</span>
           </button>
         </div>
-        <div
-  className={`items-center justify-between ${isOpen ? 'flex' : 'hidden'} w-full md:flex md:w-auto md:order-1`}
-  id="navbar-sticky"
->
-  <div className=" w-full flex justify-end md:justify-start"> {/* New div wrapper */}
-    <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ml-auto">
-      <li>
-        <NavLink to="/" exact activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          Home
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/mentorShip" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          Services
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/about" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/exploration" activeClassName="active" className="block py-2 px-3 rounded md:p-0">
-        Exploration
-        </NavLink>
-      </li>
-    </ul>
-  </div>
-</div>
+        <div className={`items-center justify-center ${isOpen ? 'flex' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
+          <ul className="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:bg-white md:border-0">
+            <li>
+              <NavLink to="/" exact="true" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
+                Home
+              </NavLink>
+            </li>
+            <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              <button
+                className="text-black font-meduim text-sm px-4 py-2 inline-flex items-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out"
+              >
+                Services 
+                <svg className="w-3 h-3 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
 
+              {/* Dropdown menu */}
+              {isDropdownOpen && (
+                <div className="absolute top-5  mt-2 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                  <ul className="py-2 text-sm text-gray-700">
+                    {services.map((service, index) => (
+                      <li key={index}>
+                        <NavLink
+                          to={service.path}
+                          className="block px-4 py-2 hover:bg-gray-100"
+                          onClick={() => {
+                            setIsDropdownOpen(false);
+                            setIsOpen(false);
+                          }}
+                        >
+                          {service.name}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+            <li>
+              <NavLink to="/about" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/exploration" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
+                Exploration
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

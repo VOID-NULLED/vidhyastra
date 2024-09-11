@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CareerMentor = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS animations
+  }, []);
+
   const categories = [
     { name: 'Technology', color: 'bg-yellow-100', icon: './images/technology.png' },
     { name: 'Medical', color: 'bg-pink-100', icon: './images/medical.png' },
@@ -11,7 +17,12 @@ const CareerMentor = () => {
   ];
 
   const CareerCategoryCard = ({ name, color, icon }) => (
-    <div className={`${color} rounded-xl sm:p-8 flex flex-col items-center justify-center text-center h-72 w-full sm:w-56 transition-transform hover:scale-105`}>
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className={`${color} rounded-xl flex flex-col items-center justify-center text-center h-72 w-56 transition-transform hover:scale-105`}
+    >
       <img src={icon} alt={name} className="mb-4 w-24 h-24 sm:w-36 sm:h-36 object-cover" />
       <h3 className="font-semibold text-lg sm:text-xl mb-1">{name}</h3>
       <a href="#" className="text-sm text-gray-600 hover:underline">View Mentors &gt;</a>
@@ -19,7 +30,7 @@ const CareerMentor = () => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center sm:p-16">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <div className="text-3xl sm:text-4xl font-bold text-center mb-10">
         Explore <span className="text-purple-600">Career Mentors</span> of Various Fields
       </div>

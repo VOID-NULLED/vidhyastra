@@ -20,7 +20,7 @@ export const Register = () => {
     username: "",
     first_name: "",
     last_name: "",
-    mobile: "",
+    mobile_number: "",
     std: "",
     password: "",
   });
@@ -48,6 +48,7 @@ export const Register = () => {
       setSuccess("SignUp Successful");
       setError("");
       console.log(response.data);
+      localStorage.setItem('access', data.tokens.access);
       navigate("/");
     } catch (error) {
       setError("SignUp Failed. Please try again");
@@ -157,8 +158,8 @@ export const Register = () => {
                 <FaPhone className="text-xl text-gray-400 mr-4" />
                 <input
                   type="text"
-                  name="mobile"
-                  value={formData.mobile}
+                  name="mobile_number"
+                  value={formData.mobile_number}
                   onChange={handleChange}
                   placeholder="Mobile Number"
                   required

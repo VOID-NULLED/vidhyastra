@@ -19,19 +19,28 @@ const Navbar = () => {
   };
 
   const services = [
+    { name: 'Ai Powered Carrer Guidence', path: '/mentorShips' },
+    { name: 'Career Exploration Tools', path: '/exploration' },
     { name: 'Mentorship Program', path: '/mentorShip' },
-    { name: 'Career Counseling', path: '/career-counseling' },
-    { name: 'Workshops', path: '/workshops' },
-    { name: 'Online Courses', path: '/online-courses' },
+    { name: 'Resource Portals', path: '/online-courses' },
   ];
 
   return (
-    <nav className="bg-white w-full z-20 top-0 left-0 shadow-md">
+    <nav className="bg-white w-full z-20 top-0 left-0 shadow-md p-2">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink to="/" className="flex items-center space-x-3">
-          <span className="self-center text-4xl text-black font-bold">Vidyastra</span>
+          <span className="self-center text-4xl sm:text-3xl text-black font-bold">Vidyastra</span>
         </NavLink>
         <div className="flex md:order-2">
+          
+          <NavLink to="/register">
+            <button
+              type="button"
+              className="text-purple-600  focus:outline-none  font-medium  text-sm px-4 py-2 text-center mr-3 md:mr-0 md:block hidden"
+            >
+              Sign Up
+            </button>
+          </NavLink>
           <NavLink to="/login">
             <button
               type="button"
@@ -51,7 +60,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`items-center justify-center ${isOpen ? 'flex' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-          <ul className="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:bg-white md:border-0">
+          <ul className="text-lg flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:bg-white md:border-0">
             <li>
               <NavLink to="/" exact="true" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
                 Home
@@ -59,7 +68,7 @@ const Navbar = () => {
             </li>
             <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <button
-                className="text-black font-meduim text-sm px-4 py-2 inline-flex items-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out"
+                className="font-meduim  px-4 py-2 inline-flex items-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out"
               >
                 Services 
                 <svg className="w-3 h-3 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" aria-hidden="true">
@@ -69,7 +78,7 @@ const Navbar = () => {
 
               {/* Dropdown menu */}
               {isDropdownOpen && (
-                <div className="absolute top-5  mt-2 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                <div className="absolute top-7  mt-2 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                   <ul className="py-2 text-sm text-gray-700">
                     {services.map((service, index) => (
                       <li key={index}>
@@ -90,13 +99,8 @@ const Navbar = () => {
               )}
             </li>
             <li>
-              <NavLink to="/about" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/exploration" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
-                Exploration
+              <NavLink to="/aboutus" className="block py-2 px-4 rounded hover:bg-gray-200 md:hover:bg-transparent md:hover:text-purple-700 transition duration-300 ease-in-out">
+                About Us
               </NavLink>
             </li>
           </ul>

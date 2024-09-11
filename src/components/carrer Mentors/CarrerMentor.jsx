@@ -30,8 +30,8 @@ const CareerMentor = () => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <div className="text-3xl sm:text-4xl font-bold text-center mb-10">
+    <div className="min-h-screen flex flex-col items-center justify-center pt-8">
+      <div className="text-3xl sm:text-4xl font-bold text-center mb-10 pb-5">
         Explore <span className="text-purple-600">Career Mentors</span> of Various Fields
       </div>
       <div className="w-full flex justify-around space-x-10">

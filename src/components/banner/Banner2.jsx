@@ -3,7 +3,7 @@ import React from 'react';
 const Banner2 = () => {
   return (
     <div>
-    <div className="flex justify-center items-center min-h-screen p-4">
+    <div className="flex justify-center items-center pt-16">
       <div className="bg-[#C465FF] rounded-3xl shadow-lg overflow-hidden max-w-4xl w-full">
         <div className="flex flex-col md:flex-row p-8 items-center">
           <div className="md:w-2/3 text-white mb-6 md:mb-0">

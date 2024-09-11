@@ -7,7 +7,7 @@ const CarrerClarityBanner = () => {
     AOS.init();
   }, []);
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white py-16 lg:pl-16">
       <h1 className="text-3xl font-bold text-purple-500 mb-6 text-center">
         Unlock Your Potential{" "}
         <span className="text-black">with Career Counselling</span>

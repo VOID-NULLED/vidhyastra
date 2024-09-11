@@ -19,17 +19,17 @@ const ExplorationBanner = () => {
     >
       <div className="mx-auto px-4 py-12 flex flex-col items-center text-center">
         <div className="w-full mb-8">
-          <h2 className="text-2xl text-gray-600 font-bold mb-2">Vidyastra Helps to</h2>
-          <h1 className="text-4xl font-bold mb-4">
+          <h2 className="text-3xl text-gray-600 font-bold mb-2">Vidyastra Helps to</h2>
+          <h1 className="text-5xl font-bold mb-4">
             Leveraging Technology for{' '}
             <br/>
             <span className='text-purple-600'>Career Guidance</span>
           </h1>
-          <p className="mb-6">
+          <p className="mb-6 text-lg">
             Access extensive information on career options, skills,<br/> education, and job trends. 
             Aligning education with<br/> market demands through
           </p>
-          <button className="bg-purple-500 text-white text-xl font-bold px-6 py-2 rounded-full hover:bg-purple-600 transition duration-300">
+          <button className="bg-purple-500 text-white text-2xl font-bold px-6 py-3 rounded-full hover:bg-purple-600 transition duration-300">
             Get Started
           </button>
         </div>

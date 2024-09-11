@@ -12,6 +12,7 @@ import MentorPage from './pages/MentorPage';
 import Exploration from './pages/Exploration';
 import Quiz from './pages/Quiz';
 import UserPage from './pages/UserPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
   return (
@@ -24,9 +25,10 @@ const App = () => {
           <Route path="about" element={<MentorPage />} />
           <Route path="mentorShip" element={<Services />} />
           <Route path="exploration" element={<Exploration />} />
-          <Route path="mentor" element={<AboutUs />} />
+          <Route path="aboutus" element={<AboutUs />} />
           <Route path="test" element={<Quiz />} />
           <Route path="user" element={<UserPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

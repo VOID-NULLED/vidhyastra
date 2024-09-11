@@ -4,14 +4,15 @@ import LogoSlider from '../components/logo Slider/LogoSlider'
 import CarrerMentor from '../components/carrer Mentors/CarrerMentor'
 import Mentors from '../components/mentors/Mentors'
 import Banner2 from '../components/banner/Banner2'
-import Review from '../components/review/Review'
 import Testimonials from '../mentor/testomonials/Testimonials'
+import UpcomingEvents from '../components/upcoming events/UpcomingEvents'
 const Services = () => {
   return (
     <div>
     <Hero2/>
     <LogoSlider/>
     <CarrerMentor/>
+    <UpcomingEvents/>
     <Mentors/>
     <Banner2/>
     <Testimonials/>

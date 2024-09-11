@@ -15,7 +15,10 @@ const MentorProfile = () => {
       <div className="px-6 py-4">
         <div className="flex flex-col md:flex-row items-center">
           {/* Profile Image */}
-          <div className="w-36 h-36 bg-gray-300 rounded-full -mt-20 border-4 border-white"></div>
+          <div className="w-36 h-36 bg-gray-300 rounded-full -mt-20 border-4 overflow-hidden">
+  <img src='/images/peter.png' className='w-full h-full object-cover'/>
+</div>
+
 
           {/* Profile Info */}
           <div className="ml-0 md:ml-6 mt-4 md:mt-0 flex-grow text-center md:text-left">
@@ -25,7 +28,7 @@ const MentorProfile = () => {
 
           {/* Book Appointment Button */}
           <div className="mt-4 md:mt-0">
-            <button className="bg-white text-purple-600 px-4 py-2 rounded-full text-sm font-medium shadow-md hover:bg-purple-50 transition duration-300 ease-in-out">
+            <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-sm font-medium shadow-md hover:bg-purple-50 transition duration-300 ease-in-out">
               Book an Appointment
             </button>
           </div>

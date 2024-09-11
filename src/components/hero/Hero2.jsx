@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero2 = () => {
   return (
-    <div className="max-w-7xl mx-auto p-16 font-sans">
+    <div className="max-w-7xl mx-auto pt-16 p-5 font-sans">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
           <h2 className="text-sm text-gray-600 pb-2 font-semibold">Vidyastra Helps to</h2>
@@ -11,7 +11,7 @@ const Hero2 = () => {
             <br />
             for <span className="text-purple-600">Career Guidance</span>
           </h1>
-          <p className="text-sm md:text-base text-gray-600 mb-4">
+          <p className="text-sm md:text-base text-gray-600 mb-4 pb-2">
             Access extensive information on career options, skills,
             education, and job trends. Aligning education with
             market demands through
@@ -26,7 +26,7 @@ const Hero2 = () => {
               Find Mentors
             </button>
           </div>
-          <div className="flex justify-between text-center">
+          <div className="flex justify-between text-center pt-2">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-purple-600">150+</h3>
               <p className="text-sm text-gray-600">Mentors Available</p>

@@ -18,10 +18,8 @@ export const Register = () => {
   const [formData, setFormData] = useState({
     email: "",
     username: "",
-    first_name: "",
-    last_name: "",
+    full_name: "",
     mobile_number: "",
-    std: "",
     password: "",
   });
 
@@ -64,7 +62,7 @@ export const Register = () => {
         <img
           src="/images/loginrectangle.png"
           alt="Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fit"
         />
       </div>
       <div className="relative z-10 w-full max-w-4xl bg-white rounded-2xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row items-center justify-between">
@@ -130,24 +128,10 @@ export const Register = () => {
                 <FaUser className="text-xl text-gray-400 mr-4" />
                 <input
                   type="text"
-                  name="first_name"
-                  value={formData.first_name}
+                  name="full_name"
+                  value={formData.full_name}
                   onChange={handleChange}
-                  placeholder="First Name"
-                  required
-                  className="bg-transparent w-full outline-none text-gray-700"
-                />
-              </div>
-
-              {/* Last Name Input */}
-              <div className="flex items-center w-full bg-gray-100 rounded-xl p-3">
-                <FaUser className="text-xl text-gray-400 mr-4" />
-                <input
-                  type="text"
-                  name="last_name"
-                  value={formData.last_name}
-                  onChange={handleChange}
-                  placeholder="Last Name"
+                  placeholder="Full Name"
                   required
                   className="bg-transparent w-full outline-none text-gray-700"
                 />
@@ -162,20 +146,6 @@ export const Register = () => {
                   value={formData.mobile_number}
                   onChange={handleChange}
                   placeholder="Mobile Number"
-                  required
-                  className="bg-transparent w-full outline-none text-gray-700"
-                />
-              </div>
-
-              {/* Std Input */}
-              <div className="flex items-center w-full bg-gray-100 rounded-xl p-3">
-                <FaGraduationCap className="text-xl text-gray-400 mr-4" />
-                <input
-                  type="text"
-                  name="std"
-                  value={formData.std}
-                  onChange={handleChange}
-                  placeholder="Std"
                   required
                   className="bg-transparent w-full outline-none text-gray-700"
                 />

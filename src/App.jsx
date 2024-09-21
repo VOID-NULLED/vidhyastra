@@ -13,6 +13,7 @@ import Exploration from './pages/Exploration';
 import Quiz from './pages/Quiz';
 import UserPage from './pages/UserPage';
 import NotFoundPage from './pages/NotFoundPage';
+import MentorsSearchPage from './mentor/all mentors/MentorsSearchPage';
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="about" element={<MentorPage />} />
+          <Route path="mentorprofile" element={<MentorPage />} />
           <Route path="mentorShip" element={<Services />} />
+          <Route path="mentorShip1" element={<MentorsSearchPage />} />
           <Route path="exploration" element={<Exploration />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="test" element={<Quiz />} />

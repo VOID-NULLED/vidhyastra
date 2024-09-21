@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ProfileCard = ({ name, position, company, skills,image }) => (
+const ProfileCard = ({ name, position, company, skills,image,link }) => (
   <div className="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+    <Link to={link}>
     <div>
         <img src={image} className='h-full object-cover'/>
     </div>
@@ -16,6 +18,7 @@ const ProfileCard = ({ name, position, company, skills,image }) => (
         ))}
       </div>
     </div>
+        </Link>
   </div>
 );
 
@@ -26,7 +29,8 @@ const AllMentors = () => {
       position: "Product Designer",
       company: "Google",
       skills: ["Data Science", "Machine Learning", "Data Analyst"],
-      image : "/images/mentor.png"
+      image : "/images/mentor.png",
+      link : "/mentorprofile"
     },
     {
       name: "Peter Fernandis",

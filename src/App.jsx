@@ -14,6 +14,7 @@ import Quiz from './pages/Quiz';
 import UserPage from './pages/UserPage';
 import NotFoundPage from './pages/NotFoundPage';
 import MentorsSearchPage from './mentor/all mentors/MentorsSearchPage';
+import ResourceDFeature from './pages/ResourceDFeature';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="mentorShip1" element={<MentorsSearchPage />} />
           <Route path="exploration" element={<Exploration />} />
           <Route path="aboutus" element={<AboutUs />} />
+          <Route path="resource" element={<ResourceDFeature />} />
           <Route path="test" element={<Quiz />} />
           <Route path="user" element={<UserPage />} />
           <Route path="*" element={<NotFoundPage />} />

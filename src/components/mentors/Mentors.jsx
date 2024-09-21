@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCards from "../profile of mentors/ProfileCards";
+import { Link } from "react-router-dom";
 
 const Mentors = () => {
   return (
@@ -20,9 +21,11 @@ const Mentors = () => {
       </div>
       <ProfileCards />
       <div className="text-center p-5">
+      <Link to="/mentorShip1">
         <button className="text-white bg-purple-600 p-2 rounded-xl px-5 py-2.5 me-2 mb-2">
           View More
         </button>
+      </Link>
       </div>
     </div>
   );

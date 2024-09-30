@@ -50,7 +50,7 @@ const AboutUs = () => {
     {
       name: "Khushi Darbar",
       role: "Web Designer",
-      image: "",
+      image: "/images/personimage/khushi.png",
       socials: ["facebook", "twitter", "github", "dribbble"],
     },
     {
@@ -62,7 +62,7 @@ const AboutUs = () => {
     {
       name: "Tanmay Dighade",
       role: "Ai Guide",
-      image: "",
+      image: "/images/personimage/tanmay.png",
       socials: ["facebook", "twitter", "github", "dribbble"],
     },
   ];
